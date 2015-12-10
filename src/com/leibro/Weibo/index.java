@@ -1,3 +1,4 @@
+package com.leibro.Weibo;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -16,10 +17,8 @@ public class index extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = request.getSession(false);
 		try {
-			String username = (String)session.getAttribute("username");
-			request.setAttribute("username", username);
-			RequestDispatcher view = request.getRequestDispatcher("main.jsp");
-			view.forward(request, response);
+			int userid = (Integer)session.getAttribute("userid");
+			response.sendRedirect("main.jsp?userid="+userid);
 		} catch(NullPointerException e) {
 			response.sendRedirect("login.html");
 		}

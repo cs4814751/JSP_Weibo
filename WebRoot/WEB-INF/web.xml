@@ -9,7 +9,7 @@
     <description>My first servlet from MyEclipse</description>
     <display-name>index</display-name>
     <servlet-name>index</servlet-name>
-    <servlet-class>index</servlet-class>
+    <servlet-class>com.leibro.Weibo.index</servlet-class>
   </servlet>
 
   <servlet-mapping>
