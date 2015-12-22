@@ -5,6 +5,7 @@
  %>
 	
 <%
+	
 	String username = request.getParameter("username");
 	String password = request.getParameter("password");
 	Connection conn = DB.getConn();
@@ -17,7 +18,7 @@
 		String correctPwd = rs.getString("password");
 		if(correctPwd.equals(password)) {
 			logined = true;
-			int userid = rs.getInt("userid");
+			userid = rs.getInt("userid");
 			session.setAttribute("userid", userid);		
 		}
 	}
@@ -46,9 +47,9 @@
 	<% if(logined == true) {%>
    	恭喜你，登录成功。 <br>
   	<span id="time" >3</span>秒钟后没跳转，请点击
-    <a href="main.jsp?userid=<%= userid %>">重新登录</a>
+    <a href="getMircoBlog?userid=<%= userid %>">重新登录</a>
     <script language="JavaScript1.2" type="text/javascript">
-		delayURL("main.jsp?userid=<%= userid %>");
+		delayURL("getMircoBlog?userid=<%= userid %>");
 	</script>
     <% } else { %>
  	  用户名或密码错误，请重新登录。 <br>

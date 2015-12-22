@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Bootstrap -->
@@ -29,7 +29,7 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit"><span>登录</span></button>
       </form>
 	  <div align="center">
-		<a href="submitdeal.jsp">还未注册？点此注册！</a>
+		<a href="#" data-toggle="modal" data-target="#myModal">还未注册？点此注册！</a>
 	  </div>
 
 
@@ -39,6 +39,53 @@
     </div>
 
 
+<!-- 
+下面是模态框
+-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    注册新用户
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form role="form" action="registerdeal" method="post">
+                  <div class="form-group">
+                    <label>用户名</label>
+                    <input type="text" class="form-control" placeholder="Enter Username" name="username"/>
+                  </div>
+                  <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" class="form-control" placeholder="Enter Password" name="password"/>
+                  </div>
+                  <div class="form-group">
+                    <label>昵称</label>
+                      <input type="text" class="form-control" placeholder="Enter NickName" name="nickname"/>
+                  </div>
+                  <button type="submit" class="btn btn-primary col-xs-offset-11">注册</button>
+                </form>
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+
+        </div>
+    </div>
+</div>
 
 
 
@@ -47,8 +94,7 @@
 
 
 
-
-    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

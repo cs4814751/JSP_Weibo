@@ -11,10 +11,119 @@
     <servlet-name>index</servlet-name>
     <servlet-class>com.leibro.Weibo.index</servlet-class>
   </servlet>
+  <servlet>
+    <display-name>getMircoBlog</display-name>
+    <servlet-name>getMircoBlog</servlet-name>
+    <servlet-class>com.leibro.Weibo.getMircoBlog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>postdeal</description>
+    <display-name>postdeal</display-name>
+    <servlet-name>postdeal</servlet-name>
+    <servlet-class>com.leibro.Weibo.postdeal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>logout</description>
+    <display-name>logout</display-name>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>com.leibro.Weibo.logout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>registerdeal</description>
+    <display-name>registerdeal</display-name>
+    <servlet-name>registerdeal</servlet-name>
+    <servlet-class>com.leibro.Weibo.registerdeal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>getuserdetail</description>
+    <display-name>getuserdetail</display-name>
+    <servlet-name>getuserdetail</servlet-name>
+    <servlet-class>com.leibro.Weibo.getuserdetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>likedeal</description>
+    <display-name>likedeal</display-name>
+    <servlet-name>likedeal</servlet-name>
+    <servlet-class>com.leibro.Weibo.likedeal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>dislikedeal</description>
+    <display-name>dislikedeal</display-name>
+    <servlet-name>dislikedeal</servlet-name>
+    <servlet-class>com.leibro.Weibo.dislikedeal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>commentdeal</description>
+    <display-name>commentdeal</display-name>
+    <servlet-name>commentdeal</servlet-name>
+    <servlet-class>com.leibro.Weibo.commentdeal</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ccomment</description>
+    <display-name>ccomment</display-name>
+    <servlet-name>ccomment</servlet-name>
+    <servlet-class>com.leibro.Weibo.ccomment</servlet-class>
+  </servlet>
+  <servlet>
+    <description>delete</description>
+    <display-name>delete</display-name>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>com.leibro.Weibo.delete</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
 
   <servlet-mapping>
     <servlet-name>index</servlet-name>
     <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getMircoBlog</servlet-name>
+    <url-pattern>/getMircoBlog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>postdeal</servlet-name>
+    <url-pattern>/postdeal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registerdeal</servlet-name>
+    <url-pattern>/registerdeal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getuserdetail</servlet-name>
+    <url-pattern>/getuserdetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>likedeal</servlet-name>
+    <url-pattern>/likedeal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>dislikedeal</servlet-name>
+    <url-pattern>/dislikedeal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>commentdeal</servlet-name>
+    <url-pattern>/commentdeal</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ccomment</servlet-name>
+    <url-pattern>/ccomment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
   </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index</welcome-file>
